@@ -3,17 +3,21 @@
     package="com.example.lab_week_11_a">
 
     <application
-        android:name=".PreferenceApplication"
+        android:name=".SettingsApplication"
         android:allowBackup="true"
         android:label="LAB_WEEK_11_A"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
 
     </application>
